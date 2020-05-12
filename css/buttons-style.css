@@ -1,0 +1,36 @@
+
+.number-button{
+	width: 210px;
+	height: 40px;
+	background-color: #fbfbfb;
+	border: 2px solid #f82370;
+	color: #f53f4f;
+	cursor: pointer;
+}
+.number-button:hover{
+	border: 2px solid #ff4e2e;
+	background-color: #ff4e2e;
+	color: #ffffff;
+}
+.number-button:focus{
+	outline: none;
+}
+
+.more-button{
+	padding: 20px 70px;
+	font-size: 18px;
+	background-color: #ff4e2e;
+	color: #ffffff;
+	cursor: pointer;
+	border: 2px solid #ff4e2e;
+	margin-top: 90px;
+	margin-bottom: 90px;
+}
+.more-button:hover{
+	background-color: #fbfbfb;
+	color: #f53f4f;
+	border: 2px solid #f82370;
+}
+.more-button:focus{
+	outline: none;
+}

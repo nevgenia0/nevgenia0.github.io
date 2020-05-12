@@ -1,0 +1,160 @@
+.carousel {
+	position: relative;
+}
+.carousel .work {
+	width: 370px;
+	/* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
+	display: block;
+}
+.gallery{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+ 	width: 1170px;
+}
+.arrow {
+	position: absolute;
+	top: 120px;
+	padding: 0;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	border: none;
+	display: block;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+#b-1{
+	background-image: url("../img/arrow.png");
+}
+#b-2{
+	background-image: url("../img/arrow-2.png");
+}
+.arrow:hover {
+ 	cursor: pointer;
+}
+.arrow:focus{
+ 	outline: none;
+}
+.prev {
+ 	left: -30px;
+}
+.next {
+ 	right: -30px;
+}
+.work{
+	margin-right: 30px;
+}
+#work-3{
+	margin-right: 0;
+}
+.work-picture{
+
+}
+.work-content{
+	margin-top: 40px;
+	text-align: center;
+	font-size: 20px;
+	color: #8993ad;
+}
+
+@media screen and (max-width: 1024px){
+	.carousel {
+		margin: 0 100px;
+	}
+	.gallery{
+	 	width: 860px;
+	 	justify-content: flex-start;
+	}
+	#b-1{
+		display: none;
+	}
+	#b-2{
+		display: none;
+	}
+	#work-3{
+		display: none;
+	}
+	#order-project{
+		margin: 75px 0 50px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	#projects-title{
+		font-size: 40px;
+	}
+	.carousel{
+		margin: 0;
+	}
+	.gallery{
+	 	width: 600px;
+	 	margin: 0 auto;
+	}
+	#work-2{
+		display: none;
+	}
+	.work{
+		margin: 0;
+	}
+	#work-1{
+		margin: 0 auto;
+	}
+	#order-project{
+		margin: 60px 0;
+	}
+}
+
+@media screen and (max-width: 425px){
+	#projects-title{
+		font-size: 36px;
+	}
+	.carousel{
+		margin: 0;
+	}
+	.gallery{
+	 	width: 400px;
+	 	margin: 0 auto;
+	}
+	.work img{
+		width: 360px;
+	}
+	.work-content{
+		font-size: 18px;
+		margin-top: 20px;
+	}
+	#order-project{
+		padding: 0;
+		font-size: 16px;
+		width: 280px;
+		height: 55px;
+		margin: 100px 0 50px;
+	}
+}
+
+@media screen and (max-width: 375px){
+	.gallery{
+	 	width: 335px;
+	}
+	#projects-title{
+		font-size: 30px;
+	}
+	.gallery{
+	 	width: 360px;
+	}
+	.work img{
+		width: 340px;
+	}
+}
+
+@media screen and (max-width: 320px){
+	.gallery{
+	 	width: 280px;
+	}
+	.work img{
+		width: 280px;
+		margin: 0 auto;
+	}
+	.work-content{
+		font-size: 16px;
+	}
+}

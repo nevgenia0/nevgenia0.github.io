@@ -1,0 +1,141 @@
+.block-photo{
+	margin-left: auto;
+	display: flex;
+	padding: 0 20px;
+}
+
+#text-block{
+	margin-left: auto;
+}
+
+/*#tag1{
+	margin-left: 130px;
+	transform: rotate(15deg);
+	font-size: 48px;
+	font-weight: bold;
+}*/
+
+#name{
+	margin-top: 220px;
+	margin-bottom: 25px;
+	font-size: 80px;
+	color: #000000;
+	font-weight: bold;
+}
+
+#specialty{
+	margin-bottom: 50px;
+	font-size: 20px;
+	color: #8993ad;
+}
+
+#photo{
+	margin-right: auto;
+	background-image: url("../img/man.png");
+	width: 627px;
+	background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1024px){
+	#text-block{
+		margin-left: 40px;
+	}
+	/*#photo{
+		height: 628px;
+		background-image: url("../img/man1024.png");
+		background-repeat: no-repeat; 
+		background-position: bottom;
+	}*/
+	#name{
+		width: 490px;
+		text-align: center;
+		font-size: 54px;
+	}
+	#specialty{
+		font-size: 25px;
+	}
+	#know-more{
+		margin-top: 40px;
+		margin-bottom: 100px;
+	}
+}
+
+@media screen and (max-width: 980px){
+	
+}
+
+@media screen and (max-width: 768px){
+	.block-photo{
+		flex-direction: column;
+		order: 0;
+	}
+	#photo{
+		width: 750px;
+		height: 627px;
+		background-repeat: no-repeat; 
+		background-position: center;
+	}
+	#text-block{
+		margin-left: 0px;
+	}
+	#text-block{
+		order: 1;
+	}
+	#name{
+		margin: 30px auto 10px;
+		text-align: center;
+		width: 700px;
+		font-size: 56px;
+	}
+	#specialty{
+		font-size: 30px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	#more{
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 425px){
+	#photo{
+		background-image: url("../img/man320.png");
+		width: 400px;
+		height: 328px;
+		background-repeat: no-repeat; 
+		background-position: center;
+	}
+	#name{
+		margin: 10px auto;
+		width: 280px;
+		font-size: 30px;
+	}
+	#specialty{
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	#know-more{
+		padding: 0;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-size: 16px;
+		width: 280px;
+		height: 55px;
+	}
+}
+
+@media screen and (max-width: 375px){
+	#photo{
+		width: 350px;
+		height: 328px;
+	}
+}
+
+@media screen and (max-device-width: 320px){
+	#photo{
+		width: 300px;
+		height: 328px;
+	}
+}
+
