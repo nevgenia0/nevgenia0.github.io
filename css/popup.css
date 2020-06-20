@@ -1,0 +1,74 @@
+#popup-container{
+	display: none;
+	position: fixed;
+	background: rgba(0,0,0,.3);
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+
+#popup{
+	width: 0;
+	height: 0;
+	background-color: white;
+	margin: 10% auto;
+	
+}
+
+#popup-main{
+	padding: 15px;
+	padding-top: 35px;
+	color: #000000;
+	text-align: center;
+	font-weight: bold;
+	font-size: 28px;
+}
+#popup-content{
+	padding: 10px;
+	color: #000000;
+}
+#popup-con{
+	font-size: 18px;
+	color: #8993ad;
+	padding: 2%;
+	text-align: center;
+}
+form div {
+  margin: 3%;
+}
+label, span {
+  display: block;
+  color: #f82370;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+input[type="text"], input[type="email"], input[type="tel"] {
+  width: 95%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-width: 0;
+  background: #ffffff;
+  outline: 1px solid #f82370;
+  margin: 0;
+}
+
+button[type="submit"]{
+ 	width: 210px;
+	height: 40px;
+	background-color: #f82370;
+	border: 2px solid #f82370;
+	color: #ffffff;
+	cursor: pointer;
+	margin-top: 25px;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+button[type="submit"]:hover{
+	border: 2px solid #ff4e2e;
+	background-color: #fbfbfb;
+	color: #f53f4f;
+}
+button[type="submit"]:focus{
+	outline: none;
+}

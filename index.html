@@ -15,9 +15,40 @@
 	<link rel="stylesheet" href="css/projects-style.css">
 	<link rel="stylesheet" href="css/color-section-style.css">
 	<link rel="stylesheet" href="css/footer-style.css">
+	<link rel="stylesheet" href="css/popup.css">
 	<script src="js/nocopy.js"></script>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popup.js"></script>
 </head>
 <body>
+	<div id="popup-container">
+		<div id="popup">
+			<div id="popup-main">
+				Закажите обратный звонок!
+			</div>
+			<div id="popup-content">
+				<div id="popup-con">
+					Оставьте свои данные, я свяжусь с Вами в ближайшее время! 
+				</div>
+				<form action="handler.php">
+					<div>
+					    <label for="name">Имя</label>
+					    <input type="text" name="name" required>
+				    </div>
+				    <div>
+					    <label for="phone">Телефон</label>
+					    <input type="tel" name="phone" required>
+				    </div>
+					<div>
+					    <label for="email">E-mail</label>
+					    <input type="email" name="email" required>
+				    </div>
+				    <button id="send-button" type="submit">Отправить</button> 
+				</form>
+			</div>
+			
+		</div>
+	</div>
 	<header>
 		<span class="toggle-button">
 	    	<div class="menu-bar menu-bar-top"></div>
@@ -45,7 +76,7 @@
 				<h1 id="name">Дмитрий Алексеев</h1>
 				<div id="specialty">Frontend-разработчик и веб-верстальщик</div>
 				<div id="more">
-					<button type="submit" class="more-button" id="know-more">Узнать больше</button>
+					<button class="more-button" id="know-more">Узнать больше</button>
 				</div>
 			</div>
 			<div id="photo"></div>
